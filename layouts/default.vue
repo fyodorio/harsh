@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen flex flex-col">
-    <nav v-if="!atHome" class="flex">
+    <nav v-if="!atHome" class="flex p-4">
       <Logo class="flex-grow" />
       <ul>
         <li><NuxtLink to="/info" class="text-2xl font-bold">Info</NuxtLink></li>
