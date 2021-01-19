@@ -1,11 +1,17 @@
 <template>
   <div class="h-screen flex flex-col">
-    <nav v-if="!atHome" class="flex p-4">
-      <Logo class="flex-grow" />
-      <ul>
-        <li><NuxtLink to="/info" class="text-2xl font-bold">Info</NuxtLink></li>
-      </ul>
-    </nav>
+    <transition name="navbar">
+      <nav v-if="!atHome" class="flex p-4">
+        <div class="flex-grow">
+          <Logo />
+        </div>
+        <ul>
+          <li>
+            <NuxtLink to="/info" class="text-2xl font-bold">Info</NuxtLink>
+          </li>
+        </ul>
+      </nav>
+    </transition>
     <main class="flex flex-1">
       <Nuxt />
     </main>
@@ -44,5 +50,26 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s;
+}
+.navbar-enter-active,
+.navbar-leave-active {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+  height: auto;
+  transform: scaleY(1);
+  transform-origin: top;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+.navbar-enter,
+.navbar-leave-to {
+  transform: scaleY(0);
 }
 </style>
