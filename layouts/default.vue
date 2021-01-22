@@ -12,7 +12,7 @@
         </ul>
       </nav>
     </transition>
-    <main class="flex flex-1">
+    <main class="flex flex-1 p-4 justify-center">
       <Nuxt />
     </main>
   </div>
