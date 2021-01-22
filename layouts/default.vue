@@ -7,7 +7,9 @@
         </div>
         <ul>
           <li>
-            <NuxtLink to="/info" class="text-2xl font-bold">Info</NuxtLink>
+            <NuxtLink to="/info" class="text-2xl font-bold text-gray-700"
+              >Info</NuxtLink
+            >
           </li>
         </ul>
       </nav>
