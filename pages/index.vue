@@ -13,7 +13,7 @@
       <NuxtLink
         to="/review"
         class="bg-green-500 hover:bg-green-700 text-white md:text-3xl text-xl font-bold py-4 px-8 rounded-xl"
-        >Get Your Review</NuxtLink
+        >Get Your Kind Review</NuxtLink
       >
       <p class="mt-6 md:font-bold text-green-700">
         <em>*</em>100% Approval Guarantee
