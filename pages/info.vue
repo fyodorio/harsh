@@ -20,4 +20,7 @@ export default {
 .nuxt-content h2 {
   @apply text-2xl font-bold m-auto text-center pb-4;
 }
+.nuxt-content p {
+  @apply text-justify;
+}
 </style>
