@@ -20,7 +20,7 @@ export const Reviews = [
   {
     id: '3',
     avatar:
-      'https://pbs.twimg.com/profile_images/988775660163252226/XpgonN0X.jpg',
+      'https://d3g9pb5nvr3u7.cloudfront.net/authors/539a28913f3c0fd71ed4e43d/2131300937/256.jpg',
     name: 'Elon Musk',
     url: 'https://en.wikipedia.org/wiki/Elon_Musk',
     review: `Me myself couldn't make it better`,

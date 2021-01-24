@@ -9,6 +9,7 @@
       <a
         :href="content.url"
         class="mx-2 hover:underline font-bold hover:text-blue-700"
+        title="Reviewer profile"
         >{{ content.name }}</a
       >
       <div class="text-gray-600">{{ content.createdAt }}</div>

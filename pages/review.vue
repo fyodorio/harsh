@@ -13,16 +13,36 @@
       <div
         class="flex flex-col items-center border-gray-700 border-l border-r p-4"
       >
-        <div class="border-gray-700 bg-red-200 w-full p-2 mb-2">old code</div>
-        <div class="border-gray-700 bg-green-200 w-full p-2 mb-2">new code</div>
+        <div
+          class="flex items-center border-solid border border-gray-600 bg-red-100 w-full p-2 mb-2 rounded-sm"
+        >
+          <SnippetLineNumber />
+          <SnippetPlaceholder />
+          <SnippetOrange />
+          <SnippetBlue />
+        </div>
+        <div
+          class="flex items-center border-solid border border-gray-600 bg-green-100 w-full p-2 mb-2 rounded-sm"
+        >
+          <SnippetLineNumber />
+          <SnippetPlaceholder />
+          <SnippetOrange />
+          <SnippetBlue />
+        </div>
 
         <ReviewContent :content="content" />
 
-        <div class="border-gray-700 bg-yellow-200 w-full p-2 mt-2">
-          some code
+        <div class="flex items-center w-full p-2 mt-2">
+          <SnippetLineNumber />
+          <SnippetPlaceholder />
+          <SnippetOrange />
+          <SnippetBlue />
         </div>
-        <div class="border-gray-700 bg-blue-200 w-full p-2 mt-2">
-          some more code
+        <div class="flex items-center w-full p-2 mt-2">
+          <SnippetLineNumber />
+          <SnippetPlaceholder />
+          <SnippetOrange />
+          <SnippetBlue />
         </div>
       </div>
 
