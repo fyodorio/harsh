@@ -13,37 +13,13 @@
       <div
         class="flex flex-col items-center border-gray-700 border-l border-r p-4"
       >
-        <div
-          class="flex items-center border-solid border border-gray-600 bg-red-100 w-full p-2 mb-2 rounded-sm"
-        >
-          <SnippetLineNumber />
-          <SnippetPlaceholder />
-          <SnippetOrange />
-          <SnippetBlue />
-        </div>
-        <div
-          class="flex items-center border-solid border border-gray-600 bg-green-100 w-full p-2 mb-2 rounded-sm"
-        >
-          <SnippetLineNumber />
-          <SnippetPlaceholder />
-          <SnippetOrange />
-          <SnippetBlue />
-        </div>
+        <SnippetLine class="mb-2" with-border :fill="'bg-red-100'" />
+        <SnippetLine class="mb-2" with-border :fill="'bg-green-100'" />
 
         <ReviewContent :content="content" />
 
-        <div class="flex items-center w-full p-2 mt-2">
-          <SnippetLineNumber />
-          <SnippetPlaceholder />
-          <SnippetOrange />
-          <SnippetBlue />
-        </div>
-        <div class="flex items-center w-full p-2 mt-2">
-          <SnippetLineNumber />
-          <SnippetPlaceholder />
-          <SnippetOrange />
-          <SnippetBlue />
-        </div>
+        <SnippetLine class="mt-2" />
+        <SnippetLine class="mt-2" />
       </div>
 
       <div class="bg-wave2 flex flex-1 justify-center">

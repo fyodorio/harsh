@@ -1,3 +1,3 @@
 <template>
-  <div class="w-4 h-4 bg-blue-600 rounded-sm mr-2"></div>
+  <div class="w-1/5 h-4 bg-blue-400 rounded-sm mr-2"></div>
 </template>
