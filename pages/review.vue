@@ -3,7 +3,7 @@
     <div class="flex-1">
       <div class="bg-wave2 flex flex-1 justify-center">
         <button
-          @click="nextReview()"
+          @click="prevReview()"
           class="bg-white hover:bg-gray-200 py-1 px-2 rounded border border-gray-700"
         >
           Previous
@@ -11,15 +11,19 @@
       </div>
 
       <div
-        class="flex flex-col items-center border-l border-r border-gray-700 p-4"
+        class="flex flex-col items-center border-gray-700 border-l border-r p-4"
       >
-        <div class="border-gray-700 bg-red-200 w-full">old code</div>
-        <div class="border-gray-700 bg-green-200 w-full">new code</div>
+        <div class="border-gray-700 bg-red-200 w-full p-2 mb-2">old code</div>
+        <div class="border-gray-700 bg-green-200 w-full p-2 mb-2">new code</div>
 
-        <ReviewContent :content="content.review" />
+        <ReviewContent :content="content" />
 
-        <div class="border-gray-700 bg-yellow-200 w-full">some code</div>
-        <div class="border-gray-700 bg-blue-200 w-full">some more code</div>
+        <div class="border-gray-700 bg-yellow-200 w-full p-2 mt-2">
+          some code
+        </div>
+        <div class="border-gray-700 bg-blue-200 w-full p-2 mt-2">
+          some more code
+        </div>
       </div>
 
       <div class="bg-wave2 flex flex-1 justify-center">
@@ -35,7 +39,6 @@
 </template>
 
 <script>
-import { sample } from 'lodash-es'
 import { Reviews } from 'static/data/data'
 
 export default {
@@ -46,8 +49,19 @@ export default {
     }
   },
   methods: {
+    prevReview() {
+      const numberOfReviews = this.reviews.length
+      const currentIndex = this.reviews.indexOf(this.content)
+      const isFirst = currentIndex === 0
+      this.content = isFirst
+        ? this.reviews[numberOfReviews - 1]
+        : this.reviews[currentIndex - 1]
+    },
     nextReview() {
-      this.content = sample(this.reviews)
+      const numberOfReviews = this.reviews.length
+      const currentIndex = this.reviews.indexOf(this.content)
+      const isLast = currentIndex === numberOfReviews - 1
+      this.content = isLast ? this.reviews[0] : this.reviews[currentIndex + 1]
     },
   },
 }

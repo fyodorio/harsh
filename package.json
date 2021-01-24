@@ -25,7 +25,6 @@
     "@nuxt/content": "^1.11.1",
     "@nuxt/typescript-runtime": "^2.0.0",
     "core-js": "^3.6.5",
-    "lodash-es": "^4.17.20",
     "nuxt": "^2.14.6"
   },
   "devDependencies": {
