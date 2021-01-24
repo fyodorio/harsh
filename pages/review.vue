@@ -10,8 +10,16 @@
         </button>
       </div>
 
-      <div class="flex justify-center border-l border-r border-gray-700 py-2">
+      <div
+        class="flex flex-col items-center border-l border-r border-gray-700 p-4"
+      >
+        <div class="border-gray-700 bg-red-200 w-full">old code</div>
+        <div class="border-gray-700 bg-green-200 w-full">new code</div>
+
         <ReviewContent :content="content.review" />
+
+        <div class="border-gray-700 bg-yellow-200 w-full">some code</div>
+        <div class="border-gray-700 bg-blue-200 w-full">some more code</div>
       </div>
 
       <div class="bg-wave2 flex flex-1 justify-center">
