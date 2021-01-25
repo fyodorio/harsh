@@ -21,6 +21,12 @@ export default {
   @apply text-2xl font-bold m-auto text-center pb-4;
 }
 .nuxt-content p {
-  @apply text-justify;
+  @apply text-justify p-2;
+}
+.nuxt-content a {
+  @apply cursor-pointer text-blue-700;
+}
+.nuxt-content a:hover {
+  @apply underline;
 }
 </style>
