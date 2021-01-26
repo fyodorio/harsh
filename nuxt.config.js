@@ -1,7 +1,7 @@
 const authorTwitter = '@fyodorio'
 const siteTitle = 'Harsh Code Review Rehab'
 const siteDescription =
-  'The only place where you code reviews will never be harsh'
+  'The only place where your code reviews will never be harsh'
 const previewImg =
   'https://res.cloudinary.com/fyodorio/image/upload/v1611592969/meta-img/harsh-code-review-rehab.png'
 
