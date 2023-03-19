@@ -1,6 +1,7 @@
 <template>
   <div class="flex flex-1 flex-col max-w-2xl items-center">
     <nuxt-content :document="info" />
+    <div class="mt-6 text-2xl">🕊️</div>
   </div>
 </template>
 

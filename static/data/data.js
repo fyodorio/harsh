@@ -37,7 +37,7 @@ export const Reviews = [
   {
     id: '50',
     avatar:
-      'https://pbs.twimg.com/profile_images/988775660163252226/XpgonN0X.jpg',
+      'http://d3g9pb5nvr3u7.cloudfront.net/authors/529fac41929d4c756b000194/1655691097/256.jpg',
     name: 'Bill Gates',
     url: 'https://en.wikipedia.org/wiki/Bill_Gates',
     review: `You rule! I would hire you right now, but I'm out of business these days. Keep it up, Maestro 👨‍🎓`,
